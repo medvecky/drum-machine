@@ -1,8 +1,12 @@
 import React from "react";
-function Display () {
+import Card from "react-bootstrap/Card";
+function Display (props) {
     return(
         <div id="display">
-            Display
+           <Card>
+               <Card.Header>Current sample</Card.Header>
+               <Card.Body>{props.sample}</Card.Body>
+           </Card>
         </div>
     );
 }

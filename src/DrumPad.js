@@ -20,10 +20,9 @@ function DrumPad(props) {
     const keys = keyNames.map((key, index) =>
         <div className='drum-pad'
              id={index + key}
-             onClick={() => props.keyHandler(key)}
+             onClick={() => props.drumPadHandler(key)}
         >
             <Button
-
                 variant="outline-info"
                 size="lg"
             >{key}</Button>
